@@ -123,6 +123,12 @@ footer{
     justify-content: center;
 }
 
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 @media (max-width: 1000px) {
     .caja-central{
         width: 90%;
