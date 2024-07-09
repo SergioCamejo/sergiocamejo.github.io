@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify; /* Justificar texto en todo el cuerpo */
 }
 
 header {
@@ -55,6 +56,7 @@ header {
     color: #303030;
     padding: 10px;
     box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
+    text-align: justify; /* Justificar texto en la caja de presentación */
 }
 
 .dos {
@@ -69,6 +71,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
+    text-align: justify; /* Justificar texto en la sección dos */
 }
 
 .aptitudes {
@@ -124,6 +127,7 @@ header {
     color: #F2F2F2;
     padding: 10px;
     box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
+    text-align: justify; /* Justificar texto en la sección tres */
 }
 
 .proyectos {
@@ -164,6 +168,7 @@ footer {
     height: 250px;
     padding: 10px;
     box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
+    text-align: justify; /* Justificar texto en el footer */
 }
 
 .contacto {
@@ -175,6 +180,11 @@ footer {
 .no-style-link {
     text-decoration: none;
     color: inherit;
+}
+
+/* Justificar texto en párrafos, títulos y listas */
+p, h1, h2, h3, ul, li {
+    text-align: justify;
 }
 
 /* Responsividad */
