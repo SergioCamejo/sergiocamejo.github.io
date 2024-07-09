@@ -1,8 +1,10 @@
-body{
+/* Estilos generales */
+body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-header{
+
+header {
     height: 65px;
     background-color: #7b1fa2;
     color: white;
@@ -10,11 +12,13 @@ header{
     align-items: center;
     padding-left: 25px;
 }
-.cara{
+
+.cara {
     border-radius: 500px;
     height: 200px;
 }
-.uno{
+
+.uno {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -22,9 +26,9 @@ header{
     height: calc(100vh - 65px);
     background-color: #303030;
     color: white;
-    /* padding-top: 10%; */
 }
-.caja-central{
+
+.caja-central {
     margin-top: 10%;
     width: 50%;
     display: flex;
@@ -33,14 +37,16 @@ header{
     overflow: hidden;
     height: 50%;
 }
-.caja-cara{
+
+.caja-cara {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     background-color: #424242;
 }
-.caja-presentacion{
+
+.caja-presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +56,8 @@ header{
     padding: 10px;
 }
 
-.dos{
+.dos {
     background-color: #F2F2F2;
-    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,21 +65,54 @@ header{
     color: #303030;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.aptitudes{
+
+.aptitudes {
     width: 50%;
 }
-.tech-list{
+
+.tech-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 10px;
 }
 
-.tech{
-    height: 90px;
+.tech-item {
+    text-align: center;
+    margin: 10px;
+    border: 2px solid gray; /* Agrega un borde gris a los elementos */
+    transition: border 0.3s; /* Transición para el borde */
 }
 
-.tres{
+.tech-item:hover {
+    border: 2px solid transparent; /* Borde transparente al pasar el mouse */
+}
+
+.tech {
+    height: 100px;
+    background-color: transparent;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tech-title {
+    margin-top: 10px;
+    font-weight: bold;
+    transition: font-size 0.3s; /* Transición para el tamaño del texto */
+}
+
+.tech-item:hover .tech-title {
+    font-size: 110%; /* Aumenta el tamaño del texto al pasar el mouse */
+}
+
+.tres {
     background-color: #303030;
     height: 150px;
     display: flex;
@@ -83,32 +121,36 @@ header{
     align-items: center;
     color: #F2F2F2;
 }
-.proyectos{
+
+.proyectos {
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-.card{
+
+.card {
     text-align: center;
     width: 30%;
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
+
 .card a, footer a {
     color: white;
 }
 
-.red-social{
+.red-social {
     height: 45px;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
 
-footer{
+footer {
     background-color: #424242;
     display: flex;
     flex-direction: column;
@@ -117,7 +159,8 @@ footer{
     color: #F2F2F2;
     height: 250px;
 }
-.contacto{
+
+.contacto {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -128,45 +171,51 @@ footer{
     color: inherit;
 }
 
-
+/* Responsividad */
 @media (max-width: 1000px) {
-    .caja-central{
+    .caja-central {
         width: 90%;
         height: 70%;
         flex-direction: column;
     }
-    .caja-cara{
+
+    .caja-cara {
         width: 100%;
         height: 50%;
     }
-    .caja-presentacion{
+
+    .caja-presentacion {
         width: 100%;
         height: 50%;
         align-items: flex-start;
     }
-    .aptitudes{
+
+    .aptitudes {
         width: auto;
     }
-    .dos{
-        height: auto;
-        padding: 0 10px 10px 10px;
 
+    .dos {
+        padding: 0 10px 10px 10px;
     }
-    .tres{
+
+    .tres {
         height: auto;
     }
-    .proyectos{
+
+    .proyectos {
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 20px;
     }
-    .card{
+
+    .card {
         width: 80%;
         margin-top: 20px;
     }
-    .red-social{
+
+    .red-social {
         margin: 0 10px 0 10px;
     }
 }
