@@ -54,6 +54,7 @@ header {
     background-color: #F2F2F2;
     color: #303030;
     padding: 10px;
+    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
 }
 
 .dos {
@@ -67,10 +68,11 @@ header {
     padding-right: 20%;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
 }
 
 .aptitudes {
-    width: 50%;
+    width: 90%;
 }
 
 .tech-list {
@@ -83,43 +85,45 @@ header {
 .tech-item {
     text-align: center;
     margin: 10px;
-    border: 2px solid gray; /* Agrega un borde gris a los elementos */
-    transition: border 0.3s; /* Transición para el borde */
+    border: 1px solid gray; /* Agrega un borde gris a la imagen */
+    transition: border 0.3s, transform 0.3s, box-shadow 0.3s, font-size 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .tech-item:hover {
     border: 2px solid transparent; /* Borde transparente al pasar el mouse */
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .tech {
     height: 100px;
     background-color: transparent;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.tech:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .tech-title {
     margin-top: 10px;
     font-weight: bold;
-    transition: font-size 0.3s; /* Transición para el tamaño del texto */
 }
 
 .tech-item:hover .tech-title {
-    font-size: 110%; /* Aumenta el tamaño del texto al pasar el mouse */
+    font-size: 115%; /* Aumenta el tamaño del texto al pasar el mouse */
 }
 
 .tres {
     background-color: #303030;
-    height: 150px;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: #F2F2F2;
+    padding: 10px;
+    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
 }
 
 .proyectos {
@@ -158,6 +162,8 @@ footer {
     align-items: center;
     color: #F2F2F2;
     height: 250px;
+    padding: 10px;
+    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
 }
 
 .contacto {
