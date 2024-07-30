@@ -1,8 +1,7 @@
-/* Estilos generales */
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    text-align: justify; /* Justificar texto en todo el cuerpo */
+    text-align: justify;
 }
 
 header {
@@ -55,8 +54,8 @@ header {
     background-color: #F2F2F2;
     color: #303030;
     padding: 10px;
-    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
-    text-align: justify; /* Justificar texto en la caja de presentación */
+    box-sizing: border-box;
+    text-align: justify;
 }
 
 .dos {
@@ -70,8 +69,8 @@ header {
     padding-right: 20%;
     padding-top: 20px;
     padding-bottom: 20px;
-    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
-    text-align: justify; /* Justificar texto en la sección dos */
+    box-sizing: border-box;
+    text-align: justify;
 }
 
 .aptitudes {
@@ -88,7 +87,7 @@ header {
 .tech-item {
     text-align: center;
     margin: 10px;
-    border: 1px solid gray; /* Agrega un borde gris a la imagen */
+    border: 1px solid gray;
     transition: border 0.3s, transform 0.3s, box-shadow 0.3s, font-size 0.3s;
     display: flex;
     flex-direction: column;
@@ -99,7 +98,7 @@ header {
 }
 
 .tech-item:hover {
-    border: 2px solid transparent; /* Borde transparente al pasar el mouse */
+    border: 2px solid transparent;
     transform: scale(1.15);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -115,7 +114,7 @@ header {
 }
 
 .tech-item:hover .tech-title {
-    font-size: 115%; /* Aumenta el tamaño del texto al pasar el mouse */
+    font-size: 115%;
 }
 
 .tres {
@@ -126,8 +125,8 @@ header {
     align-items: center;
     color: #F2F2F2;
     padding: 10px;
-    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
-    text-align: justify; /* Justificar texto en la sección tres */
+    box-sizing: border-box;
+    text-align: justify;
 }
 
 .proyectos {
@@ -167,8 +166,8 @@ footer {
     color: #F2F2F2;
     height: 250px;
     padding: 10px;
-    box-sizing: border-box; /* Añadido box-sizing para incluir padding en el tamaño total */
-    text-align: justify; /* Justificar texto en el footer */
+    box-sizing: border-box;
+    text-align: justify;
 }
 
 .contacto {
@@ -182,12 +181,10 @@ footer {
     color: inherit;
 }
 
-/* Justificar texto en párrafos, títulos y listas */
 p, h1, h2, h3, ul, li {
     text-align: justify;
 }
 
-/* Responsividad */
 @media (max-width: 1000px) {
     .caja-central {
         width: 90%;
